@@ -185,24 +185,30 @@ npm run dev
 ## Testing and Quality Assurance
 
 ###  Functionality Testing
-User registration and login system
-Appointment booking and confirmation
-Appointment reschedule/cancel functionality
-Service’s review/rating functionality and review display
-Appointment details display
-Admin user management
-Responsive design across devices
+- User registration and login system
+- Appointment booking and confirmation
+- Appointment reschedule/cancel functionality
+- Service’s review, rating functionality and review display
+- Appointment details display
+- Admin user management
+- Responsive design across devices
 
 ### Browser Compatibility
-Microsoft Edge
-
-
+- Microsoft Edge
+- Google Chrome
+- 
 
 ### Performance Testing
-
-
+-
+-
 
 ## Challenges Faced and Solutions
+### Challenge 1:
+- Problem:
+- Solution:
+### Challenge 2:
+- Problem:
+- Solution:
 
 ## Future Enhancements
 
