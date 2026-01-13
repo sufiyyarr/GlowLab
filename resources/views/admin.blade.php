@@ -24,7 +24,7 @@
                 <th>Date</th>
                 <th>Time</th>
                 <th>Status</th>
-                <th>Action</th> 
+                <th>Actions</th> 
             </tr>
         </thead>
         <tbody>
@@ -36,18 +36,51 @@
                     <td>{{ $appointment->service }}</td>
                     <td>{{ $appointment->date }}</td>
                     <td>{{ $appointment->time }}</td>
-                    <td>{{ $appointment->status }}</td>
-                    <td>
-                        @if($appointment->status !== 'Completed')
-                        <form action="{{ route('appointments.complete', $appointment->id) }}" method="POST">
+                    <td>{{ ucfirst($appointment->status) }}</td>
+                    <td class="d-flex gap-1 flex-wrap">
+
+                        {{-- Mark Completed --}}
+                        @if($appointment->status !== 'completed')
+                        <form action="{{ route('appointments.complete', $appointment->id) }}" method="POST" class="mb-1">
                             @csrf
                             @method('PUT')
+                            <input type="hidden" name="redirect" value="admin">
                             <button type="submit" class="btn btn-success btn-sm">Mark Completed</button>
                         </form>
-                        @else
+                        @endif
+
+                        {{-- Reschedule --}}
+                        @if($appointment->status === 'pending')
+                        <a href="{{ route('appointment.edit', $appointment->id) }}?redirect=admin" 
+                        class="btn btn-primary btn-sm mb-1">
+                        Reschedule
+                        </a>
+                        @endif
+
+                        {{-- Cancel --}}
+                        @if($appointment->status !== 'cancelled' && $appointment->status !== 'completed')
+                        <form action="{{ route('appointment.destroy', $appointment->id) }}" method="POST" class="mb-1">
+                            @csrf
+                            @method('DELETE')
+                            <input type="hidden" name="redirect" value="admin">
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Are you sure you want to cancel this appointment?')">
+                                Cancel
+                            </button>
+                        </form>
+                        @endif
+
+                        {{-- Completed Badge --}}
+                        @if($appointment->status === 'completed')
                             <span class="badge bg-success">Completed</span>
                         @endif
+
+                        {{-- Cancelled Badge --}}
+                        @if($appointment->status === 'cancelled')
+                            <span class="badge bg-danger">Cancelled</span>
+                        @endif
                     </td>
+
                 </tr>
             @endforeach
         </tbody>

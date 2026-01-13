@@ -62,43 +62,56 @@ class AppointmentController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'date'    => 'required|date',
-            'time'    => 'required',
+            'date' => 'required|date|after_or_equal:today',
+            'time' => 'required',
             'message' => 'nullable|string',
         ]);
 
         $appointment = Appointment::findOrFail($id);
         $appointment->update([
-            'date'    => $request->date,
-            'time'    => $request->time,
+            'date' => $request->date,
+            'time' => $request->time,
             'message' => $request->message,
         ]);
 
-        return redirect()->route('profile')->with('success', 'Appointment rescheduled successfully.');
+        // Redirect logic
+        $redirectTo = $request->input('redirect') === 'admin' 
+            ? route('admin.dashboard') 
+            : route('profile');
+
+        return redirect($redirectTo)->with('success', 'Appointment rescheduled successfully.');
     }
 
+
     
-    public function destroy($id)
+    public function destroy($id, Request $request)
     {
         $appointment = Appointment::findOrFail($id);
-
         $appointment->update([
             'status' => 'cancelled',
             'canceled_at' => now(),
         ]);
 
-        return redirect()->route('profile')
-            ->with('success', 'Appointment canceled successfully.');
+        $redirectTo = $request->input('redirect') === 'admin' 
+            ? route('admin.dashboard') 
+            : route('profile');
+
+        return redirect($redirectTo)->with('success', 'Appointment cancelled successfully.');
     }
 
-    public function markComplete($id)
+    public function markComplete($id, Request $request)
     {
         $appointment = Appointment::findOrFail($id);
         $appointment->status = 'completed';
         $appointment->save();
 
-        return redirect()->back()->with('success', 'Appointment marked as completed.');
+        $redirectTo = $request->input('redirect') === 'admin' 
+            ? route('admin.dashboard') 
+            : redirect()->back();
+
+        return redirect($redirectTo)->with('success', 'Appointment marked as completed.');
     }
+
 
 
 }
