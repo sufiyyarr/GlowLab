@@ -10,7 +10,7 @@
 </head>
 <body class="confirmation-page">
 
-<header><!-- header HTML here --></header>
+<header>Booking Confirmation</header>
 
 <main class="main py-5" style="margin-top:80px;">
     <div class="container">

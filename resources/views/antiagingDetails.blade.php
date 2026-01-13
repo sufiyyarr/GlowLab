@@ -38,7 +38,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
           <svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Sparkle / Beauty Icon -->
+            
             <path d="M12 2L13.8 6.2L18 8L13.8 9.8L12 14L10.2 9.8L6 8L10.2 6.2L12 2Z"
                   stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
             <path d="M18 14L18.9 16.1L21 17L18.9 17.9L18 20L17.1 17.9L15 17L17.1 16.1L18 14Z"

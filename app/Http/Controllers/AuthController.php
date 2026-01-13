@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
-use App\Models\Appointment; // Make sure you import the Appointment model
+use App\Models\Appointment; 
 
 class AuthController extends Controller
 {
@@ -25,7 +25,7 @@ class AuthController extends Controller
 
         // --- Admin login check ---
         if ($credentials['email'] === 'admin@glowlab.com' && $credentials['password'] === 'admin12345') {
-            // Optionally store a session flag to identify admin
+            
             session(['is_admin' => true]);
             return redirect()->route('admin.dashboard');
         }
