@@ -88,9 +88,7 @@ User can leave multiple reviews (One-to-Many)
     `//Login`
     
     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
-    
     Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
-    
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     
     `// Home Page`
@@ -102,7 +100,6 @@ User can leave multiple reviews (One-to-Many)
     `// Appointment Page`
     
     Route::get('/appointment', [AppointmentController::class, 'create'])->name('appointment');
-    
     Route::post('/appointment', [AppointmentController::class, 'store'])->name('appointment.store');
     
     `// Confirmation Page`
@@ -117,35 +114,24 @@ User can leave multiple reviews (One-to-Many)
     `// Edit / Update / Delete / Complete routes`
     
     Route::get('/appointment/{id}/edit', [AppointmentController::class, 'edit'])->name('appointment.edit');
-    
     Route::put('/appointment/{id}', [AppointmentController::class, 'update'])->name('appointment.update');
-    
     Route::delete('/appointment/{id}', [AppointmentController::class, 'destroy'])->name('appointment.destroy');
-    
     Route::put('/appointment/{id}/complete', [AppointmentController::class, 'markComplete'])->name('appointments.complete');
     
     `// Services & Details Pages`
     
     Route::view('/services', 'services')->name('services');
-    
     Route::view('/facialDetails', 'facialDetails')->name('facialDetails');
-    
     Route::view('/acneDetails', 'acneDetails')->name('acneDetails');
-    
     Route::view('/antiagingDetails', 'antiagingDetails')->name('antiagingDetails');
-    
     Route::view('/brighteningDetails', 'brighteningDetails')->name('brighteningDetails');
-    
     Route::view('/hydratingDetails', 'hydratingDetails')->name('hydratingDetails');
-    
     Route::view('/pigmentationDetails', 'pigmentationDetails')->name('pigmentationDetails');
     
     `// Contact & About Pages`
     
     Route::get('/contact', [ReviewController::class, 'index'])->name('contact');
-    
     Route::post('/contact', [ReviewController::class, 'store'])->name('reviews.store');
-    
     Route::view('/about', 'about')->name('about');
     
     `// Admin Dashboard`
@@ -246,22 +232,22 @@ class Review extends Model
 - Views and User Interface
 
   *Blade Templates Structure:*
-- login.blade.php - Login and authentication page
-- mainpage.blade.php - Home page to the beauty clinic website
-- services.blade.php - Services listings
-- about.blade.php - About us page
-- contact.blade.php - Contact information, reviews and ratings display
-- appointment.blade.php - Make an appointment by filling in the form
-- confirmation.blade.php - Display booking confirmation
-- profile.blade.php - display user information, pending appointments, and completed appointments
-- admin.blade.php - admin page to manage appointment bookings
-- Service details pages :  
-    - acneDetails.blade.php
-    - antiagingDetails.blade.php
-    - brighteningDetails.blade.php
-    - facialDetails.blade.php
-    - hydratingDetails.blade.php
-    - pigmentationDetails.blade.php
+    - login.blade.php - Login and authentication page
+    - mainpage.blade.php - Home page to the beauty clinic website
+    - services.blade.php - Services listings
+    - about.blade.php - About us page
+    - contact.blade.php - Contact information, reviews and ratings display
+    - appointment.blade.php - Make an appointment by filling in the form
+    - confirmation.blade.php - Display booking confirmation
+    - profile.blade.php - display user information, pending appointments, and completed appointments
+    - admin.blade.php - admin page to manage appointment bookings
+    - Service details pages :  
+        - acneDetails.blade.php
+        - antiagingDetails.blade.php
+        - brighteningDetails.blade.php
+        - facialDetails.blade.php
+        - hydratingDetails.blade.php
+        - pigmentationDetails.blade.php
  
    *Design Features:*
    - Responsive Design: Bootstrap 5 for mobile-first approach
@@ -283,6 +269,7 @@ Incorrect login attempts return controlled error messages without revealing sens
 *3. Password management*
 Passwords are never stored in plain text
 Secure hashing algorithms (e.g., bcrypt) are used
+
 ### **Authorization & Access Control**
 *1. Role-Based Access Control (RBAC)*
 The system may support different user roles such as:
