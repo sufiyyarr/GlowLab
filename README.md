@@ -21,30 +21,30 @@ Introduction: GlowLab is a web-based beauty clinic system designed to simplify t
 
 ## Project Objectives
 
-Primary Goal: To streamline the beauty clinic appointment booking and management process.
-User Experience Goal: To ensure a consistent, accessible and easy-to-navigate web experience for both customers and administrators. 
-Technical Goal: Implement Laravel MVC architecture with full CRUD operations.
+- Primary Goal: To streamline the beauty clinic appointment booking and management process.
+- User Experience Goal: To ensure a consistent, accessible and easy-to-navigate web experience for both customers and administrators. 
+- Technical Goal: Implement Laravel MVC architecture with full CRUD operations.
 
 ## Target Users
 
-Customers: Individuals looking for beauty treatments services online
-Administrators: Authorized clinic staff who manage bookings and system content. 
+- Customers: Individuals looking for beauty treatments services online
+- Administrators: Authorized clinic staff who manage bookings and system content. 
 
 ## Features and Functionalities
 
 ** Customer Features**
 
-Browse services: View all available beauty treatments with a details descriptions
-Book Appointments: Schedule an appointment by selecting service, date and time
-View Appointment History: Check past and upcoming appointments.
-Manage Appointments: Cancel or rescheduled appointments before the scheduled time.
-User Login: Secure account creation and authentication
-Review and Ratings: Provide a review and rate the services after appointments
+- Browse services: View all available beauty treatments with a details descriptions
+- Book Appointments: Schedule an appointment by selecting service, date and time
+- View Appointment History: Check past and upcoming appointments.
+- Manage Appointments: Cancel or rescheduled appointments before the scheduled time.
+- User Login: Secure account creation and authentication
+- Review and Ratings: Provide a review and rate the services after appointments
 
 **Admin Features**
 
-Admin Dashboard: View upcoming booking
-Manage Appointments: Approve, reschedule or cancel customers bookings
+- Admin Dashboard: View upcoming booking
+- Manage Appointments: Approve, reschedule or cancel customers bookings
 
 ## Technical Implementation
 
@@ -396,16 +396,16 @@ Solution: Clearly identified and shared only the modified files in one shared Go
 
 ### Technical Skills Gained 
 
-Laravel Framework: Build web system using Laravel and understand MVC architecture
-Database Design: Design and manage databases for bookings and users
-Authentication: Implement user login
-Frontend Development: Create user-friendly interfaces for customers and administrators
+- Laravel Framework: Build web system using Laravel and understand MVC architecture
+- Database Design: Design and manage databases for bookings and users
+- Authentication: Implement user login
+- Frontend Development: Create user-friendly interfaces for customers and administrators
 
 ### Soft Skills Developed
 
-Team Collaboration: Work productively within group members
-Project Management: Plan and execute a complete web system project
-Problem Solving: Debug and resolve issues in web application
+- Team Collaboration: Work productively within group members
+- Project Management: Plan and execute a complete web system project
+- Problem Solving: Debug and resolve issues in web application
 
 ## References
 1. Laravel Documentation. (2024). Laravel 10.x Documentation. Retrieved from https://laravel.com/docs/10.x
@@ -420,10 +420,10 @@ The Glowlab website successfully demonstrated the integration of Laravel with a 
 
 ### Key Achievements
 
-Developed a responsive and intuitive interface
-Applied the MVC architecture effectively
-Implemented secure authentication features
-Produces clear documentation describing the website design
+- Developed a responsive and intuitive interface
+- Applied the MVC architecture effectively
+- Implemented secure authentication features
+- Produces clear documentation describing the website design
 
 ### Project Impact
 This project offered valuable experience in developing a complete web application while working effectively as a team. The knowledge and skills gained are particles and can be applied to future projects.
