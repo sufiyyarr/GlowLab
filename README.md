@@ -411,6 +411,8 @@ Problem Solving: Debug and resolve issues in web application
 1. Laravel Documentation. (2024). Laravel 10.x Documentation. Retrieved from https://laravel.com/docs/10.x
 2. Bootstrap Documentation. (2024). Bootstrap 5.3 Documentation. Retrieved from https://getbootstrap.com/docs/5.3/
 3. MySQL Documentation. (2024). MySQL 8.0 Reference Manual. Retrieved from https://dev.mysql.com/doc/refman/8.0/en/
+4. Atlassian. (2025). git init | Atlassian Git Tutorial. Atlassian. Retrieved from https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init
+5. Bootstrapmade. (2026). 5+ Best Free Bootstrap Medical Website Templates 2026 | BootstrapMade. Retrieved from Bootstrapmade.com. https://bootstrapmade.com/bootstrap-medical-templates/
 
 
 ## Conclusion
