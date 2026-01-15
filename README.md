@@ -371,18 +371,18 @@ Interactive front-end performance
 
 ### Challenge 1: Integrating New Feature Without Breaking Existing Page
 
-Problem: Adding new features heightened the risk for breaking existing form logic and cluttering the UI
-Solution: Ensure the form follows Laravel MVC pattern and keep UI clean and consistent within existing design
+- Problem: Adding new features heightened the risk for breaking existing form logic and cluttering the UI
+- Solution: Ensure the form follows Laravel MVC pattern and keep UI clean and consistent within existing design
 
 ### Challenge 2: Data Validation and Security
 
-Problem: User input from forms can be incomplete or invalid, leading to inconsistent data stored in the database
-Solution: Applied Laravel request validation in the controller
+- Problem: User input from forms can be incomplete or invalid, leading to inconsistent data stored in the database
+- Solution: Applied Laravel request validation in the controller
 
 ### Challenge 3: Team Collaboration & Code Synchronization
 
-Problem: Multiple team members worked on different parts of the project, which lead to missing files and merge conflicts
-Solution: Clearly identified and shared only the modified files in one shared Google Drive folder
+- Problem: Multiple team members worked on different parts of the project, which lead to missing files and merge conflicts
+- Solution: Clearly identified and shared only the modified files in one shared Google Drive folder
 
 ## Future Enhancements
 
