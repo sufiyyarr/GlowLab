@@ -386,11 +386,11 @@ Solution: Clearly identified and shared only the modified files in one shared Go
 
 ## Future Enhancements
 
-Mobile App Version: Create an app for iOS and Android
-Online Payment Integration: Allow customers to pay online during booking
-Automated Reminders: Send automatic notifications before appointments
-Service Management: Add, update or remove treatment services
-AI-based Recommendations: Suggest popular or suitable treatments to new customers
+- Mobile App Version: Create an app for iOS and Android
+- Online Payment Integration: Allow customers to pay online during booking
+- Automated Reminders: Send automatic notifications before appointments
+- Service Management: Add, update or remove treatment services
+- AI-based Recommendations: Suggest popular or suitable treatments to new customers
 
 ## Learning Outcomes
 
