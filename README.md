@@ -138,22 +138,22 @@ Route::put('/appointment/{id}/complete', [AppointmentController::class, 'markCom
   
   *Main Controllers Implemented are below :*
 
-AuthController: Handles Login page
-ServicesController: Manage services offered on the website
-AboutController: Handles About page to display clinic-related information
-ContactController: Handles contact information and reviews and rating form
-ReviewController: Handles creating reviews and rating
-AppointmentController: Manage appointments display for user profile and admin, and CRUD operations for appointments
-ConfirmationController: Display confirmation booking for appointment
-ProfileController: Customer profile for appointment listings
+- AuthController: Handles Login page
+- ServicesController: Manage services offered on the website
+- AboutController: Handles About page to display clinic-related information
+- ContactController: Handles contact information and reviews and rating form
+- ReviewController: Handles creating reviews and rating
+- AppointmentController: Manage appointments display for user profile and admin, and CRUD operations for appointments
+- ConfirmationController: Display confirmation booking for appointment
+- ProfileController: Customer profile for appointment listings
 
  *Controllers for displaying service details:*
-AcneDetailsController
-AntiagingDetailsController
-BrighteningDetailsController
-FacialDetailsController
-HydratingDetailsController
-PigmentationDetailsController
+- AcneDetailsController
+- AntiagingDetailsController
+- BrighteningDetailsController
+- FacialDetailsController
+- HydratingDetailsController
+- PigmentationDetailsController
 
 - Models and Relationships
 //User Model
@@ -217,22 +217,22 @@ class Review extends Model
 - Views and User Interface
 
   *Blade Templates Structure:*
-login.blade.php - Login and authentication page
-mainpage.blade.php - Home page to the beauty clinic website
-services.blade.php - Services listings
-about.blade.php - About us page
-contact.blade.php - Contact information, reviews and ratings display
-appointment.blade.php - Make an appointment by filling in the form
-confirmation.blade.php - Display booking confirmation
-profile.blade.php - display user information, pending appointments, and completed appointments
-admin.blade.php - admin page to manage appointment bookings
-Service details pages :  
-acneDetails.blade.php
-antiagingDetails.blade.php
-brighteningDetails.blade.php
-facialDetails.blade.php
-hydratingDetails.blade.php
-pigmentationDetails.blade.php
+- login.blade.php - Login and authentication page
+- mainpage.blade.php - Home page to the beauty clinic website
+- services.blade.php - Services listings
+- about.blade.php - About us page
+- contact.blade.php - Contact information, reviews and ratings display
+- appointment.blade.php - Make an appointment by filling in the form
+- confirmation.blade.php - Display booking confirmation
+- profile.blade.php - display user information, pending appointments, and completed appointments
+- admin.blade.php - admin page to manage appointment bookings
+- Service details pages :  
+    - acneDetails.blade.php
+    - antiagingDetails.blade.php
+    - brighteningDetails.blade.php
+    - facialDetails.blade.php
+    - hydratingDetails.blade.php
+    - pigmentationDetails.blade.php
  
    *Design Features:*
    - Responsive Design: Bootstrap 5 for mobile-first approach
